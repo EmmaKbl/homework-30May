@@ -29,7 +29,18 @@ span {
     font-weight: 500;
 }
 
+img {
+    position: absolute;
+    top: 0;
+    margin: -155px auto 0 -45px;
+}
+
+section {
+    position: relative;
+}
+
 .container {
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -45,15 +56,24 @@ span {
 }
 
 .top-content {
+    position: absolute;
     background-color: #0f2557;
-    padding: 40px 15px;
+    padding: 40px 20px;
     line-height: 1.2;
+    top: 0;
+    margin: 50px 30px;
+}
+
+.top-content::before {
+    content: '';
+    background-image: url('../images/bars2.png');
 }
 
 .gradient-bg {
     background-image: linear-gradient(#306ed5, #b23c8a);
-    min-height: 70vh;
-    max-width: 300px;
+    min-height: 90vh;
+    width: 100%;
+    max-width: 600px;
 }
 
 .svg-icon {
@@ -63,7 +83,7 @@ span {
 
 .btn {
     margin: 33px auto 55px;
-    padding: 15px 56px 16px;
+    padding: 18px 30px;
     font-family: 'Montserrat', sans-serif;
     background-color: #f15048;
     border-radius: 4px;
@@ -72,19 +92,27 @@ span {
     font-size: 1rem;
     font-weight: 700;
     letter-spacing: 2px;
-    cursor: pointer;
     white-space: nowrap;
+    cursor: pointer;
+    text-align: center;
+}
+
+.btn:hover {
+    background-color: #EF342B;
 }
 
 .card {
-    background-color: rgba(65, 132, 244, .7);
-    padding: 5px;
+    background-color: rgba(65, 132, 244, .8);
+    padding: 15px;
     margin-bottom: 10px;
     text-align: center;
+    cursor: pointer;
 }
 
 .card p {
     cursor: pointer;
-    margin: 16px 1px 0;
+    margin: 10px 0px 0px;
     line-height: 1;
+    font-size: 1.125rem;
+    font-weight: 400;
 }
