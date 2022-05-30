@@ -1,4 +1,26 @@
 body {
     font-family: Roboto, sans-serif;
-    font-size: 1.5rem;
+    font-size: 1rem;
+    color: #fff;
+}
+
+.main-content {
+    width: 100%;
+    height: auto;
+    background-image: url('../images/bg.jpg');
+    background-position: 50% 50%;
+    background-attachment: fixed;
+    object-fit: cover;
+    background-size: cover;
+    padding: 50px 15px;
+}
+
+.top-content {
+    background-color: #0f2557;
+}
+
+.gradient-bg {
+    background-image: linear-gradient(#306ed5, #b23c8a);
+    min-height: 70vh;
+    max-width: 300px;
 }
